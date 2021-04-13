@@ -1,0 +1,338 @@
+:root {
+    /* Accent colors */
+    --accent: #987259;
+
+    /* Dark colors */
+    --dark: #101026;
+
+    /* Light colors */
+    --light: #FFFFFF;
+    --grey: #EFEFEF;
+}
+
+::selection {
+    background: var(--accent);
+    color: var(--light);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1 span,
+h2 span {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark);
+}
+
+p,
+span {
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--dark);
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+section, header {
+    margin: 0 110px;
+}
+
+section {
+    height: 100vh;
+    position: relative;
+}
+
+button {
+    background: var(--accent);
+    border: 0;
+    padding: 10px 40px;
+    font-size: 15px;
+    border-radius: 4px;
+    color: var(--light);
+    transition: .2s;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+
+.wave-top {
+    position: absolute;
+    bottom: 0;
+    margin-left: -110px;
+}
+
+.wave-bottom {
+    position: absolute;
+    top: 0;
+    margin-left: -110px;
+}
+
+.center-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+
+
+/* Navigation Styling */
+
+nav {
+    height: 100px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background: var(--light);
+}
+
+nav img {
+    height: 35px;
+    position: absolute;
+    left: 110px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav .navlinks {
+    position: absolute;
+    right: 110px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav .navlinks a {
+    text-align: right;
+    padding: 37px 40px;
+    color: var(--dark);
+}
+
+nav .navlinks a:hover {
+    border-bottom: 3px solid #c3c3c3;
+}
+
+nav .navlinks a.active {
+    border-bottom: 3px solid var(--accent);
+}
+
+
+
+
+
+
+
+
+
+/* Hero styling */
+header {
+    height: 100vh;
+    position: relative;
+}
+
+header h1 {
+    font-size: 110px;
+    color: var(--accent);
+    max-width: 80%;
+    line-height: 100px;
+}
+
+header h2 {
+    font-weight: 300;
+    font-size: 35px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+header a:last-of-type button {
+    background: var(--dark);
+}
+
+
+
+
+
+
+/* About section styling */
+
+.center-content h3 {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.center-content p {
+    width: 40%;
+    margin-top: 10px;
+}
+
+.center-content button {
+    margin-top: 10px;
+}
+
+.half-image {
+    width: calc(50% + 110px);
+    overflow: hidden;
+    position: absolute;
+    right: -110px;
+    z-index: -1;
+    height: 100vh;
+}
+
+.half-image img {
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+
+
+
+
+
+
+
+/* Featured Product Styling */
+
+#featured-products h3 {
+    text-align: center;
+}
+
+.featured-container {
+    width: calc(100vw - 220px);
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured-product-container {
+    background: var(--grey);
+    width: 200px;
+    height: 75px;
+    border-radius: 18px;
+    position: relative;
+    padding: 75px 50px 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.featured-product img {
+    position: relative;
+    bottom: -75px;
+    width: 60%;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .2s ease-in-out;
+}
+
+.featured-product {
+    cursor: pointer;
+}
+
+.featured-product button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 80px;
+    background: var(--dark);
+}
+
+.featured-product h5 {
+    font-size: 20px;
+}
+
+.featured-product p {
+    width: 100%;
+}
+
+.featured-product:hover img {
+    bottom: -65px;
+}
+
+.featured-product:hover button {
+    background: var(--accent);
+}
+
+
+
+
+
+
+
+/* Footer styling */
+
+footer {
+    height: 500px;
+    background: var(--dark);
+    color: var(--light);
+    padding: 110px;
+}
+
+.footer-column {
+    width: 33.33%;
+    float: left;
+}
+
+.footer-column h6 {
+    font-size: 20px;
+    color: var(--light);
+}
+
+.footer-column p {
+    color: var(--light);
+    display: inline;
+}
+
+.footer-column span {
+    font-weight: 600;
+    display: block;
+    padding-top: 20px;
+    color: var(--light);
+}
+
+.footer-column img {
+    height: 25px;
+    display: inline;
+}
+
+.footer-column.social-media p {
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
