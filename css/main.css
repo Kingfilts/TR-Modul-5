@@ -21,7 +21,7 @@
     font-family: 'Poppins', sans-serif;;
 }
 
-body {
+html {
     overflow-x: hidden;
 }
 
@@ -384,6 +384,10 @@ footer {
   width: 100%;
 }
 
+#laringmateriale {
+  top: -250px;
+}
+
 #laringmateriale h4 {
   text-align: center;
   font-size: 40px;
@@ -391,4 +395,40 @@ footer {
 
 #laringmateriale .center-content {
   width: 100%;
+}
+
+.foredrag-billede {
+  width: 45%;
+  position: relative;
+  float: left;
+  transform: translateY(-50%);
+}
+
+.foredrag-billede img {
+  width: 100%;
+}
+
+.foredrag-text {
+  width: 40%;
+  float: left;
+  position: absolute;
+  left: 60%;
+  top: -10%;
+  transform: translateY(-50%);
+}
+
+.foredrag-text p {
+  width: 100%;
+}
+
+.foredrag-text h4 {
+  font-size: 40px;
+}
+
+#mereforedrag .center-content {
+  width: 100%;
+}
+
+#mereforedrag {
+  top: -150px;
 }
