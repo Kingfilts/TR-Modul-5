@@ -35,6 +35,7 @@ h1 span,
 h2 span {
     font-family: 'Poppins', sans-serif;
     color: var(--dark);
+    z-index: 5;
 }
 
 p,
@@ -321,6 +322,7 @@ footer {
     margin-left: 10px;
 }
 
+/*ANTON - FOREDRAG OG KURSER*/
 
 .forlanger {
   width: 100%;
@@ -331,7 +333,6 @@ footer {
 }
 
 .overskrift-tekst {
-  font-family: 'Poppins', bold, sans-serif;
   font-size: 110px;
   color: white;
   top: 150px;
@@ -339,7 +340,6 @@ footer {
 }
 
 .underoverskrift {
-  font-family: 'Poppins', bold, sans-serif;
   font-size: 43px;
   color: white;
   top: 300px;
@@ -354,9 +354,41 @@ footer {
 
 #erfaring {
   width: 100%;
-  position: absolute;
+  position: relative;
+  height: 120vh;
 }
 
-#erfaring-overskrift {
-  top: 100px;
+.erfaring-text {
+  width: 40%;
+  float: left;
+}
+
+.erfaring-text p {
+  width: 100%;
+}
+
+.erfaring-overskrift {
+  font-size: 40px;
+}
+
+.erfaring-billede {
+  width: 30%;
+  position: absolute;
+  float: right;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.erfaring-billede img {
+  width: 100%;
+}
+
+#laringmateriale h4 {
+  text-align: center;
+  font-size: 40px;
+}
+
+#laringmateriale .center-content {
+  width: 100%;
 }
