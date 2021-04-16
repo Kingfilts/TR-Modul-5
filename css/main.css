@@ -461,7 +461,7 @@ footer {
 
 .contact-p {
     position: relative;
-    top: -260px; 
+    top: -260px;
     width: 100%;
 }
 
@@ -586,3 +586,78 @@ footer {
     left: 0;
 }
 /* End of Contact subpage (THEA) */
+
+
+
+/*MAJA - WEBSHOP*/
+
+
+#unikt {
+  width: 100%;
+  position: relative;
+  height: 120vh;
+}
+
+.unikt-text {
+  width: 50%;
+  float: left;
+}
+
+.unikt-text p {
+  width: 100%;
+}
+
+.unikt-overskrift {
+  font-size: 40px;
+}
+
+#product-overview{
+  margin-top: -200px;
+}
+
+
+.webshop-container {
+    width: calc(100vw - 220px);
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.webshop-product img {
+    position: relative;
+    width: 230px;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .2s ease-in-out;
+    bottom: -15px;
+}
+
+.webshop-product-container {
+    background: var(--grey);
+    width: 130px;
+    height: 10px;
+    border-radius: 18px;
+    position: absolute;
+    padding: 75px 50px 10px;
+    cursor: pointer;
+}
+
+
+.webshop-product {
+    cursor: pointer;
+}
+
+
+.webshop-product h5 {
+    font-size: 20px;
+}
+
+.featured-product p {
+    width: 100%;
+}
+
+.featured-product:hover img {
+    bottom: -65px;
+}
