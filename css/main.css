@@ -668,6 +668,7 @@ footer {
   padding-top: 150px;
   display: flex;
   justify-content: center;
+  min-height: 900px;
 }
 
 .product-image-list {
@@ -743,6 +744,7 @@ text-align: center;
 display: flex;
 margin-bottom: 10%;
 margin-top: 10%;
+cursor: pointer;
 }
 .controller-list > img {
 padding-right: 15px;
