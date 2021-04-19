@@ -701,3 +701,140 @@ footer {
     left: 17%;
     z-index: 50;
 }
+/*LAUGE - PRODUKT SIDE*/
+
+
+.product-hero {
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  min-height: 900px;
+}
+
+.product-image-list {
+  display: flex;
+  list-style-type: none;
+
+}
+.image-item {
+  padding-right: 10px;
+}
+.product-heading {
+  font-size: 45px;
+}
+.hero-text-container {
+ margin-left: 5%;
+}
+
+.product-amount {
+  display: flex;
+  width: 100%;
+  height: 100px;
+
+}
+.product-amount {
+margin-top: 10%;
+}
+.minus-but {
+  display:block;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  background-color: transparent;
+  color: black;
+  padding: 0px;
+  margin-right: 10px;
+}
+.input-amount {
+width: 25px;
+height: 45px;
+outline: none;
+background-color: transparent;
+border: none;
+text-align: center;
+}
+.plus-but {
+  display:block;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  background-color: transparent;
+  color: black;
+  padding: 0px;
+  margin-left: 10px;
+}
+.antal {
+  padding-top: 10px;
+  padding-right: 10px;
+}
+.calltoaction {
+  width: 375px;
+  height: 55px;
+}
+
+.materials {
+  margin-top: 15px;
+}
+.material {
+  color: #BABABC;
+}
+.controller-list {
+display: flex;
+margin-bottom: 10%;
+margin-top: 10%;
+cursor: pointer;
+}
+.controller-list > img {
+padding-right: 15px;
+}
+.controller-list2 {
+display: flex;
+margin-bottom: 10%;
+margin-top: 10%;
+}
+.controller-list2 > img {
+padding-right: 15px;
+}
+.controller-list3 {
+display: flex;
+margin-bottom: 10%;
+margin-top: 10%;
+}
+.controller-list3 > img {
+padding-right: 20px;
+}
+.info-container {
+display: flex;
+}
+.billedeinfo {
+  height: 500px;
+  width: 400px;;
+
+}
+.overskrift-info {
+ font-size: 50px;
+
+}
+.info-text-skalle {
+  width: 75%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.info-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info-container {
+width: 100%;
+}
+#product-info {
+  width: 100%;
+  height: 80vh;
+  margin: 0 110px;
+}
+.billedeinfo {
+  margin-right: 250px;
+}
