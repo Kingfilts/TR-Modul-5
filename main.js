@@ -21,10 +21,12 @@ const navslide = () => {
         burger.classList.toggle('toggle');
     });
 
-}
+};
 
 navslide();
 
+
+function changeImage() {
 
 // Her bliver der lavet consts til vores forskellige billeder
 // En const til det aktive billede og vores liste af billeder
@@ -69,6 +71,10 @@ document.querySelector(".plus-but").addEventListener("click", function () {
 
         document.getElementById("antal").value = valueCount;
 });
+    
+    }
+
+
 
 
 
@@ -130,3 +136,43 @@ btn.addEventListener("click", function () {
 okay.addEventListener("click", function(){
     popup.classList.remove("active");
 })
+
+
+
+
+
+
+
+
+
+
+
+// Filtrering
+function getSelectValue(obj) {
+  var uid = obj.options[obj.selectedIndex].getAttribute('value');
+  //alert(uid);
+
+  var allProducts = document.querySelectorAll(".webshop-product")
+  var showThis = document.querySelectorAll(".webshop-product." + uid)
+
+// Gemmer alle produkter væk ved filtrering
+  for (i = 0; i < allProducts.length; i++) {
+    allProducts[i].classList.add("hidden");
+  };
+
+// fjerner hidden class fra valgt filter
+  for (i = 0; i < showThis.length; i++) {
+    showThis[i].classList.remove("hidden");
+  }
+
+// viser alle produkter når "alle" filtrering er valgt
+  if (uid == "alle") {
+    for (i = 0; i < allProducts.length; i++) {
+      allProducts[i].classList.remove("hidden");
+    };
+  }
+
+}
+
+
+changeImage() 

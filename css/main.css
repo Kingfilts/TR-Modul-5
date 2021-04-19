@@ -18,11 +18,17 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;;
+    font-family: 'Poppins', sans-serif;
+    ;
 }
 
-html, body{
+html,
+body {
     overflow-x: hidden;
+}
+
+body {
+    overflow-y: hidden;
 }
 
 h1,
@@ -50,12 +56,13 @@ a {
     text-decoration: none;
 }
 
-section, header {
+section,
+header {
     margin: 0 110px;
 }
 
 section {
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
 }
 
@@ -99,78 +106,78 @@ button:hover {
 
 /* Nav Bar Section */
 nav {
-  display: flex;
-  flex: 2;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: 12vh;
-  margin: 0;
-  z-index: 10;
-  border-bottom: 1px #1111110e solid;
-  position: fixed;
-  background: var(--light);
+    display: flex;
+    flex: 2;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 12vh;
+    margin: 0;
+    z-index: 10;
+    border-bottom: 1px #1111110e solid;
+    position: fixed;
+    background: var(--light);
 }
 
 .logo {
-  display: flex;
-  width: 200px;
-  margin-left: 110px;
-  margin-right: 50px;
+    display: flex;
+    width: 200px;
+    margin-left: 110px;
+    margin-right: 50px;
 }
 
 .logo img {
-  width: 200px;
+    width: 200px;
 }
 
 .nav-links {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  height: 12.1vh;
-  position: relative;
-  margin-right: 110px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 12.1vh;
+    position: relative;
+    margin-right: 110px;
 }
 
 .nav-links li {
-  display: block;
-  flex-grow: 1;
-  text-align: center;
-  font-weight: 500;
-  position: relative;
+    display: block;
+    flex-grow: 1;
+    text-align: center;
+    font-weight: 500;
+    position: relative;
 }
 
 .nav-links li a {
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 50%;
-  overflow: hidden;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    overflow: hidden;
 }
 
 .nav-links li:hover {
-  border-bottom: 3px solid var(--accent);
+    border-bottom: 3px solid var(--accent);
 }
 
 .nav-links a {
-  color: #000000;
-  text-decoration: none;
+    color: #000000;
+    text-decoration: none;
 }
 
 .burger {
-  display: none;
-  cursor: pointer;
+    display: none;
+    cursor: pointer;
 }
 
 .burger div {
-  width: 25px;
-  height: 3px;
-  background-color: #000000;
-  margin: 5px;
-  transition: all 0.3s ease;
+    width: 25px;
+    height: 3px;
+    background-color: #000000;
+    margin: 5px;
+    transition: all 0.3s ease;
 }
 
 /* Responsiv max-w 1120px */
-    @media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 1120px) {
     body {
         overflow-x: hidden;
     }
@@ -184,7 +191,8 @@ nav {
     }
 
     .logo img {
-        width: 200px; /* EVT LAV % OM TIL PX, SÅ DU UNDGÅR SIZING */
+        width: 200px;
+        /* EVT LAV % OM TIL PX, SÅ DU UNDGÅR SIZING */
         padding-bottom: 10px;
         padding-top: 5px;
         margin-left: 110px;
@@ -199,13 +207,14 @@ nav {
         flex-direction: column;
         align-items: center;
         width: 40%;
-        transform: translateX(-10%); /* OVERFLOW FEJL LÅ HER */
+        transform: translateX(-10%);
+        /* OVERFLOW FEJL LÅ HER */
         transition: 0.5s ease-in;
         font-size: 0.875rem;
         margin-right: 0;
     }
 
-   .nav-links li {
+    .nav-links li {
         opacity: 0;
         width: 100%;
         transition: 0.2s;
@@ -253,12 +262,13 @@ nav {
 
     @keyframes navLinkFade {
         from {
-        opacity: 0;
-        transform: translateX(50px);
+            opacity: 0;
+            transform: translateX(50px);
         }
+
         to {
-        opacity: 1;
-        transform: translateX(0px);
+            opacity: 1;
+            transform: translateX(0px);
         }
     }
 
@@ -273,28 +283,33 @@ nav {
     .toggle .line3 {
         transform: rotate(45deg) translate(-5px, -6px);
     }
-  }
-  /* End of Responsiv max-w 1120px */
+}
 
-  /* Responsiv max-w 600px */
-  @media only screen and (max-width: 600px) {
+/* End of Responsiv max-w 1120px */
+
+/* Responsiv max-w 600px */
+@media only screen and (max-width: 600px) {
     .logo img {
-      margin-left: 50px;
-  }
-    .nav-links {
-      transform: translateX(-5%); /* OVERFLOW FEJL LÅ HER */
-      width: 50%;
+        margin-left: 50px;
     }
-  }
-  /* End of Responsiv max-w 600px */
 
-  /* Responsiv max-w 400px */
-  @media only screen and (max-width: 400px) {
-  .logo img {
-      width: 150px;
+    .nav-links {
+        transform: translateX(-5%);
+        /* OVERFLOW FEJL LÅ HER */
+        width: 50%;
     }
-  }
-  /* End of Responsiv max-w 400px */
+}
+
+/* End of Responsiv max-w 600px */
+
+/* Responsiv max-w 400px */
+@media only screen and (max-width: 400px) {
+    .logo img {
+        width: 150px;
+    }
+}
+
+/* End of Responsiv max-w 400px */
 /* End of Nav Bar Section */
 
 
@@ -491,115 +506,117 @@ footer {
 /*ANTON - FOREDRAG OG KURSER*/
 
 .forlanger {
-  width: 100%;
-  height: 100%;
-  background-color: var(--dark);
-  margin-left: -110px;
-  padding: 0 110px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark);
+    margin-left: -110px;
+    padding: 0 110px;
 }
 
 .overskrift-tekst {
-  font-size: 110px;
-  color: white;
-  top: 150px;
-  position: relative;
-  background-color: var(--dark);
+    font-size: 80px;
+    font-weight: 700;
+    color: var(--light);
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
 }
 
 .underoverskrift {
-  font-size: 43px;
-  color: white;
-  top: 300px;
-  left: 0px;
-  position: absolute;
-  background-color: var(--dark);
+    font-size: 43px;
+    color: var(--light);
+    font-weight: 300;
+    position: absolute;
+    top: 80%;
+    transform: translateY(-50%);
 }
 
 #side-overskrift {
-  position: relative;
-  height: 50vh;
+    position: relative;
+    height: 50vh;
 }
 
 #erfaring {
-  width: 100%;
-  position: relative;
-  height: 120vh;
+    width: 100%;
+    position: relative;
+    height: 120vh;
 }
 
 .erfaring-text {
-  width: 40%;
-  float: left;
+    width: 40%;
+    float: left;
 }
 
 .erfaring-text p {
-  width: 100%;
+    width: 100%;
 }
 
 .erfaring-overskrift {
-  font-size: 40px;
+    font-size: 40px;
 }
 
 .erfaring-billede {
-  width: 30%;
-  position: absolute;
-  float: right;
-  left: 50%;
-  top: 50%;
-  transform: translateY(-50%);
+    width: 30%;
+    position: absolute;
+    float: right;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .erfaring-billede img {
-  width: 100%;
+    width: 100%;
 }
 
 #laringmateriale {
-  top: -250px;
+    top: -250px;
 }
 
 #laringmateriale h4 {
-  text-align: center;
-  font-size: 40px;
+    text-align: center;
+    font-size: 40px;
 }
 
 #laringmateriale .center-content {
-  width: 100%;
+    width: 100%;
 }
 
 .foredrag-billede {
-  width: 45%;
-  position: relative;
-  float: left;
-  transform: translateY(-50%);
+    width: 45%;
+    position: relative;
+    float: left;
+    transform: translateY(-50%);
 }
 
 .foredrag-billede img {
-  width: 100%;
+    width: 100%;
 }
 
 .foredrag-text {
-  width: 40%;
-  float: left;
-  position: absolute;
-  left: 60%;
-  top: -10%;
-  transform: translateY(-50%);
+    width: 40%;
+    float: left;
+    position: absolute;
+    left: 60%;
+    top: -10%;
+    transform: translateY(-50%);
 }
 
 .foredrag-text p {
-  width: 100%;
+    width: 100%;
 }
 
 .foredrag-text h4 {
-  font-size: 40px;
+    font-size: 40px;
 }
 
 #mereforedrag .center-content {
-  width: 100%;
+    width: 100%;
 }
 
 #mereforedrag {
-  top: -150px;
+    top: -150px;
 }
+
 /* End of Foredrag subpage (ANTON) */
 
 
@@ -607,12 +624,15 @@ footer {
 
 
 /* Contact subpage (THEA) */
-#contact-section .center-content {
+/*#contact-section .center-content {
     width: 100%;
     margin-top: 20px;
     height: 100vh;
     position: absolute;
     top: 950px;
+}*/
+#contact-section {
+    padding: 100px 0;
 }
 
 #contact-section .center-content p {
@@ -620,27 +640,14 @@ footer {
     margin-top: 20px;
 }
 
-.contact-h3 {
-    position: relative;
-    top: -260px;
-}
-
-.contact-p {
-    position: relative;
-    top: -260px;
-    width: 100%;
-}
-
 .contact-form {
-    height: 80vh;
-    width: 45%;
-    display: flex;
-    position: relative;
-    top: 350px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .form {
-    height: 35vh;
     width: 80%;
     max-width: 50vw;
     position: relative;
@@ -649,11 +656,11 @@ footer {
 
 .form input {
     margin-top: 20px;
-    padding: 7px;
+    padding: 5px;
     border-radius: 4px;
     width: 100%;
     border: 1px solid #303030;
-    font-size: 18px;
+    font-size: 12px;
 }
 
 .form textarea {
@@ -663,7 +670,7 @@ footer {
     width: 100%;
     height: 20vh;
     border: 1px solid #303030;
-    font-size: 18px;
+    font-size: 12px;
 }
 
 .form input::placeholder {
@@ -675,15 +682,16 @@ footer {
 }
 
 .forms-btn {
-    position: absolute;
-    top: 460px;
-    right: 140px;
+    position: relative;
+    top: 10px;
+    right: 0;
+    width: auto;
 }
 
-#popup{
+#popup {
     display: none;
     position: relative;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     top: -300px;
     left: 50%;
     height: 300px;
@@ -691,34 +699,34 @@ footer {
     background: white;
     border-style: groove;
     border-radius: 5px;
-  }
+}
 
-  #popup.active{
+#popup.active {
     display: block;
-  }
+}
 
-  #popup h1{
+#popup h1 {
     text-align: center;
     margin-top: 50px;
     font-size: medium;
-  }
+}
 
-  #popup img{
+#popup img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 150px;
     visibility: hidden;
-  }
+}
 
-  #popup-besked{
+#popup-besked {
     text-align: center;
     margin-bottom: 20px;
     position: relative;
     top: -100px;
-  }
+}
 
-  #confirm-btn {
+#confirm-btn {
     background: var(--accent);
     border: 0;
     padding: 10px 40px;
@@ -728,11 +736,11 @@ footer {
     transition: .2s;
     cursor: pointer;
     transform: translateX(127%);
-  }
+}
 
-  #confirm-btn:hover {
+#confirm-btn:hover {
     opacity: .8;
-  }
+}
 
 
 
@@ -751,6 +759,7 @@ footer {
     position: absolute;
     left: 0;
 }
+
 /* End of Contact subpage (THEA) */
 
 
@@ -759,27 +768,27 @@ footer {
 
 
 #unikt {
-  width: 100%;
-  position: relative;
-  height: 120vh;
+    width: 100%;
+    position: relative;
+    height: 120vh;
 }
 
 .unikt-text {
-  width: 50%;
-  float: left;
+    width: 50%;
+    float: left;
 }
 
 .unikt-text p {
-  width: 100%;
+    width: 100%;
 }
 
 .unikt-overskrift {
-  font-size: 40px;
+    font-size: 40px;
 }
 
-#product-overview{
-  margin-top: -200px;
-  height: auto;
+#product-overview {
+    margin-top: -200px;
+    height: auto;
 }
 
 
@@ -810,12 +819,12 @@ footer {
     margin-top: -20px;
 }
 
-.webshop-product-container h5{
+.webshop-product-container h5 {
     padding-left: 20px;
     padding-top: 25px;
 }
 
-.webshop-product-container p{
+.webshop-product-container p {
     padding-left: 20px;
     padding-top: 10px;
 }
@@ -840,7 +849,7 @@ footer {
 
 
 
-.comingsoon{
+.comingsoon {
     height: 100%;
     width: 100%;
     background: rgb(152 114 89 / 50%);
@@ -852,7 +861,7 @@ footer {
 
 }
 
-.comingsoon h2{
+.comingsoon h2 {
     font-size: 20px;
     position: absolute;
     color: white;
@@ -860,14 +869,15 @@ footer {
     left: 17%;
     z-index: 50;
 }
+
 /*LAUGE - PRODUKT SIDE*/
 
 
 .product-hero {
-  padding-top: 150px;
-  display: flex;
-  justify-content: center;
-  min-height: 900px;
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    min-height: 900px;
 }
 
 .product-hero-images img.active {
@@ -877,138 +887,363 @@ footer {
 }
 
 .product-image-list {
-  display: flex;
-  list-style-type: none;
+    display: flex;
+    list-style-type: none;
 
 }
+
 .image-item {
-  padding-right: 10px;
+    padding-right: 10px;
 }
+
 .product-heading {
-  font-size: 45px;
+    font-size: 45px;
 }
+
 .hero-text-container {
- margin-left: 5%;
+    margin-left: 5%;
 }
 
 .product-amount {
-  display: flex;
-  width: 100%;
-  height: 100px;
+    display: flex;
+    width: 100%;
+    height: 100px;
 
 }
+
 .product-amount {
-margin-top: 10%;
+    margin-top: 10%;
 }
+
 .minus-but {
-  display:block;
-  height: 45px;
-  width: 45px;
-  border-radius: 50%;
-  border: 2px solid var(--accent);
-  background-color: transparent;
-  color: black;
-  padding: 0px;
-  margin-right: 10px;
+    display: block;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+    background-color: transparent;
+    color: black;
+    padding: 0px;
+    margin-right: 10px;
 }
+
 .input-amount {
-width: 25px;
-height: 45px;
-outline: none;
-background-color: transparent;
-border: none;
-text-align: center;
+    width: 25px;
+    height: 45px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    text-align: center;
 }
+
 .plus-but {
-  display:block;
-  height: 45px;
-  width: 45px;
-  border-radius: 50%;
-  border: 2px solid var(--accent);
-  background-color: transparent;
-  color: black;
-  padding: 0px;
-  margin-left: 10px;
+    display: block;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+    background-color: transparent;
+    color: black;
+    padding: 0px;
+    margin-left: 10px;
 }
+
 .antal {
-  padding-top: 10px;
-  padding-right: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
 }
+
 .calltoaction {
-  width: 375px;
-  height: 55px;
+    width: 375px;
+    height: 55px;
 }
 
 .materials {
-  margin-top: 15px;
+    margin-top: 15px;
 }
+
 .material {
-  color: #BABABC;
+    color: #BABABC;
 }
+
 .controller-list {
-display: flex;
-margin-bottom: 10%;
-margin-top: 10%;
-cursor: pointer;
+    display: flex;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    cursor: pointer;
 }
+
 .controller-list > img {
-padding-right: 15px;
+    padding-right: 15px;
 }
+
 .controller-list2 {
-display: flex;
-margin-bottom: 10%;
-margin-top: 10%;
+    display: flex;
+    margin-bottom: 10%;
+    margin-top: 10%;
 }
+
 .controller-list2 > img {
-padding-right: 15px;
+    padding-right: 15px;
 }
+
 .controller-list3 {
-display: flex;
-margin-bottom: 10%;
-margin-top: 10%;
+    display: flex;
+    margin-bottom: 10%;
+    margin-top: 10%;
 }
+
 .controller-list3 > img {
-padding-right: 20px;
+    padding-right: 20px;
 }
+
 .info-container {
-display: flex;
+    display: flex;
 }
+
 .billedeinfo {
-  height: 500px;
-  width: 400px;;
+    height: 500px;
+    width: 400px;
+    ;
 
 }
+
 .overskrift-info {
- font-size: 50px;
+    font-size: 50px;
 
 }
+
 .info-text-skalle {
-  width: 75%;
-  margin-top: 10px;
-  margin-bottom: 20px;
+    width: 75%;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
+
 .info-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
 .info-container {
-width: 100%;
+    width: 100%;
 }
+
 #product-info {
-  width: 100%;
-  height: 80vh;
-  margin: 0 110px;
+    width: 100%;
+    height: 80vh;
+    margin: 0 110px;
 }
+
 .billedeinfo {
-  margin-right: 250px;
+    margin-right: 250px;
 }
 
 
 
 
-@media only screen and (max-width: 1120px) {
-  section, header {
-    margin: 0 50px;
+
+
+
+
+/*MAJA - WEBSHOP*/
+
+
+#unikt {
+    width: 100%;
+    position: relative;
+    height: 120vh;
 }
+
+.unikt-text {
+    width: 50%;
+    float: left;
+}
+
+.unikt-text p {
+    width: 100%;
+}
+
+.unikt-overskrift {
+    font-size: 40px;
+}
+
+#product-overview {
+    margin-top: -200px;
+    height: auto;
+}
+
+
+.webshop-container {
+    width: calc(100vw - 220px);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+
+.webshop-product img {
+    position: relative;
+    width: 230px;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .2s ease-in-out;
+    border-radius: 18px;
+    max-height: 230px;
+}
+
+.webshop-product-container {
+    height: 100px;
+    width: 100%;
+    background: var(--grey);
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    margin-top: -20px;
+}
+
+.webshop-product-container h5 {
+    padding-left: 20px;
+    padding-top: 25px;
+}
+
+.webshop-product-container p {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.webshop-product {
+    cursor: pointer;
+    position: relative;
+}
+
+
+.webshop-product h5 {
+    font-size: 17px;
+}
+
+.featured-product p {
+    width: 100%;
+}
+
+.featured-product:hover img {
+    bottom: -65px;
+}
+
+.wave-top2 {
+    position: relative;
+    bottom: 0;
+    margin-left: -110px;
+    margin-bottom: -10px;
+}
+
+
+.comingsoon {
+    height: 100%;
+    width: 100%;
+    background: rgb(152 114 89 / 50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 18px;
+
+}
+
+.comingsoon h2 {
+    font-size: 20px;
+    position: absolute;
+    color: white;
+    top: 35%;
+    left: 17%;
+    z-index: 50;
+}
+
+.hidden {
+    display: none;
+}
+
+.diverse,
+.bestik {
+    cursor: not-allowed;
+}
+
+.filtrertekst {
+    position: relative;
+    left: 73%;
+    font-weight: bold;
+}
+
+#webshoplist {
+    position: relative;
+    left: 73%;
+    border-color: #987259;
+    border-radius: 2px;
+}
+
+/* End of webshop page (Maja) */
+
+/* MAJA - Om froholdt*/
+
+#omfroholdt {
+    position: relative;
+    height: 100vh;
+    margin: 0;
+}
+
+.half-col {
+    width: calc(50% - 110px);
+    height: 100vh;
+    float: left;
+    position: relative;
+    margin-left: 110px;
+
+}
+
+.half-col.ompicture {
+    width: 50%;
+    overflow: hidden;
+    float: right;
+    margin-left: 0;
+    top: 120px;
+    z-index: -1;
+}
+
+.half-col.ompicture img {
+    width: 100%;
+
+}
+
+.historien-text {
+    width: 80vw;
+    float: left;
+    position: relative;
+    top: 100px;
+}
+
+.historien-text2 {
+    width: 80vw;
+    float: left;
+    position: relative;
+
+}
+
+
+
+
+
+@media only screen and (max-width: 1400px) {
+
+    section, header {
+        margin: 0 50px;
+    }
+    
+    .featured-product {
+        width: 15%;
+        
+    }
+    .featured-product-container {
+        width: 100% !important;
+        padding: 50px 25px 25px;
+    }
 }

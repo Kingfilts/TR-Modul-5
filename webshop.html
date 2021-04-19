@@ -2,11 +2,9 @@
 <html>
 
 <head>
-    <title>Den Fynske Trædrejer - Webshop </title>
-    <meta name="description" content="Special butikken dedikeret til drejning af træ og træformning. Den fynske trædrejer tilbyder også træskærerkursus, trædrejnings videomateriale og håndlavet produkter af det fineste træ"/>
-    <meta name="keywords" content="Trædrejning, Håndlavet produkter, Fynske trædrejer, Foredrag, Kurser, Per Froholdt, Den Fynske Trædrejer, Kunst, Bogense, Køb Trædrejeri, Køb kunst">
+    <title>Den Fynske Trædrejer V/ Per Froholdt</title>
+
     <link rel="stylesheet" href="css/main.css">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
@@ -20,41 +18,41 @@
 
   <body>
 
-<!-- Nav -->
+    <!-- Nav -->
 <nav>
 
-  <div class="logo">
-      <a href="index.html">
-          <img src="img/logo.svg" alt="logo">
-      </a>
-  </div>
+    <div class="logo">
+        <a href="index.html">
+            <img src="img/logo.svg" alt="logo">
+        </a>
+    </div>
 
-  <ul class="nav-links">
-      <li>
-          <a href="index.html">Forside</a>
-      </li>
-      <li>
-          <a href="webshop.html">Webshop</a>
-      </li>
-      <li>
-          <a href="foredrag.html">Foredrag</a>
-      </li>
-      <li>
-          <a href="omkring.html">Omkring</a>
-      </li>
-      <li>
-          <a href="contact.html">Kontakt</a>
-      </li>
-  </ul>
+    <ul class="nav-links">
+        <li>
+            <a href="index.html">Forside</a>
+        </li>
+        <li>
+            <a href="webshop.html">Webshop</a>
+        </li>
+        <li>
+            <a href="foredrag.html">Foredrag</a>
+        </li>
+        <li>
+            <a href="omkring.html">Omkring</a>
+        </li>
+        <li>
+            <a href="contact.html">Kontakt</a>
+        </li>
+    </ul>
 
-  <div class="burger">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-  </div>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
 </nav>
 
-  <div class="nav-shade"></div>
+    <div class="nav-shade"></div>
 <!-- End of Nav -->
 
 <header id="side-overskrift">
@@ -70,22 +68,32 @@
   <div class="center-content">
     <div class="unikt-text">
       <h4 class="unikt-overskrift">Hvad er unikt ved <br>mine produkter</h4>
-      <p>Mit navn er Per Froholdt. Jeg har været trædrejer i 64 år. Jeg lærte hos drejermester Åge Grim i Søborg og senere på Frederiksberg ved siden af den gamle biograf Roxy. Alle skulle aftjene værnepligt, hvilket jeg gjorde som telegrafist bl.a. på Hærkomandoen i København.
-  1988 blev jeg ansat som lærer på Martal Efterskole, hvor jeg var til jeg som 62 årig blev (1997 pensioneret). Så tog jeg mit gamle fag som trædrejer og har haft eget værksted som prof. trædrejer.</p>
+      <p>Froholdt er et trædrejeri, som lægger vægt på bæredygtighed, eksklusivitet samt kunsten i at skabe håndlavede produkter. Hvert produkt er unikt og lavet med kærlighed for at skabe mening og glæde for dig. Trædrejer, Per Froholdt, har arbejdet i faget siden 1954 og har et højt niveau af ekspertise indenfor trædrejning og de forskellige teknikker.</p>
 
   <a href="#"><button>Læs mere</button></a>
     </div>
 
+<div class="filtrertekst">
+  <p>Filtrer:</p>
+</div>
 
+<select id="webshoplist" onchange="getSelectValue(this)">
+  <option value="alle">Alle</option>
+  <option value="skaal">Skåle</option>
+  <option value="bestik">Køkkenredskaber</option>
+  <option value="diverse">Diverse</option>
+</select>
 
   </div>
+
 </section>
 
 <section id="product-overview">
 
   <div class="webshop-container">
 
-    <div class="webshop-product">
+      <a href="produktpage.html">
+    <div class="webshop-product skaal" data="skaal">
       <img src="img/skalle1.png">
 
       <div class="webshop-product-container">
@@ -93,8 +101,9 @@
           <p>2890.00 DKK</p>
       </div>
     </div>
+          </a>
 
-    <div class="webshop-product">
+    <div class="webshop-product skaal" data="skaal">
       <img src="img/skalle2.png">
 
       <div class="webshop-product-container">
@@ -103,7 +112,30 @@
       </div>
     </div>
 
-    <div class="webshop-product">
+    <div class="webshop-product skaal" data="skaal">
+      <img src="img/putteL.png">
+
+      <div class="webshop-product-container">
+          <h5>Putte skålen - L</h5>
+          <p>2490.00 DKK</p>
+      </div>
+    </div>
+
+    <div class="webshop-product skaal" data="skaal">
+      <img src="img/putteM.png">
+
+      <div class="webshop-product-container">
+          <h5>Putte skålen - M</h5>
+          <p>1890.00 DKK</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="webshop-container">
+
+
+    <div class="webshop-product bestik" data="bestik">
       <img src="img/ske1.png">
 
       <div class="webshop-product-container">
@@ -112,7 +144,7 @@
       </div>
     </div>
 
-    <div class="webshop-product">
+    <div class="webshop-product bestik" data="bestik">
       <img src="img/ske2.png">
 
       <div class="webshop-product-container">
@@ -121,129 +153,70 @@
       </div>
     </div>
 
-</div>
+    <div class="webshop-product bestik" data="bestik">
+      <img src="img/griber.png">
 
-<div class="webshop-container">
-
-  <div class="webshop-product">
-    <img src="img/braet.png">
-
-    <div class="webshop-product-container">
-        <h5>Spættebræt</h5>
-        <p>890.00 DKK</p>
+      <div class="webshop-product-container">
+          <h5>Salat griber</h5>
+          <p>690.00 DKK</p>
+      </div>
     </div>
 
-    <div class="comingsoon">
-      <h2>Kommer snart</h2>
+    <div class="webshop-product bestik" data="bestik">
+      <img src="img/redskab.png">
+
+      <div class="webshop-product-container">
+          <h5>Køkkenredskaber</h5>
+          <p>90.00 DKK - 300.00 DKK</p>
+      </div>
     </div>
 
   </div>
 
-  <div class="webshop-product">
+<div class="webshop-container">
+
+
+  <div class="webshop-product diverse" data="diverse">
+    <img src="img/rundbraet.jpg">
+
+    <div class="webshop-product-container">
+        <h5>Kiwibræt</h5>
+        <p>1000.00 DKK</p>
+    </div>
+  </div>
+
+
+  <div class="webshop-product diverse" data="diverse">
     <img src="img/plate.png">
 
     <div class="webshop-product-container">
         <h5>Snack plate</h5>
         <p>290.00 DKK</p>
     </div>
-
-    <div class="comingsoon">
-      <h2>Kommer snart</h2>
-    </div>
-
   </div>
 
-  <div class="webshop-product">
-    <img src="img/griber.png">
+  <div class="webshop-product diverse" data="diverse">
+    <img src="img/braet.png">
 
     <div class="webshop-product-container">
-        <h5>Salat griber</h5>
-        <p>690.00 DKK</p>
+        <h5>Spættebræt</h5>
+        <p>890.00 DKK</p>
     </div>
-
-    <div class="comingsoon">
-      <h2>Kommer snart</h2>
-    </div>
-
   </div>
 
-  <div class="webshop-product">
-    <img src="img/redskab.png">
-
-    <div class="webshop-product-container">
-        <h5>Køkkenredskaber</h5>
-        <p>90.00 DKK - 300.00 DKK</p>
-    </div>
-
-    <div class="comingsoon">
-      <h2>Kommer snart</h2>
-    </div>
-
-  </div>
-
-</div>
-
-<div class="webshop-container">
-
-  <div class="webshop-product">
-    <img src="img/putteL.png">
-
-    <div class="webshop-product-container">
-        <h5>Putte skålen - L</h5>
-        <p>2490.00 DKK</p>
-    </div>
-
-    <div class="comingsoon">
-      <h2>Kommer snart</h2>
-    </div>
-
-  </div>
-
-  <div class="webshop-product">
-    <img src="img/putteM.png">
-
-    <div class="webshop-product-container">
-        <h5>Putte skålen - M</h5>
-        <p>1890.00 DKK</p>
-    </div>
-
-    <div class="comingsoon">
-      <h2>Kommer snart</h2>
-    </div>
-
-  </div>
-
-  <div class="webshop-product">
-    <img src="img/putteS.png">
-
-    <div class="webshop-product-container">
-        <h5>Putte skålen - S</h5>
-        <p>1290.00 DKK</p>
-    </div>
-
-    <div class="comingsoon">
-      <h2>Kommer snart</h2>
-    </div>
-
-  </div>
-
-  <div class="webshop-product">
+  <div class="webshop-product diverse" data="diverse">
     <img src="img/spejl.png">
 
     <div class="webshop-product-container">
         <h5>Kone spejlet</h5>
         <p>2890.00 DKK</p>
     </div>
-
-    <div class="comingsoon">
-      <h2>Kommer snart</h2>
-    </div>
-
   </div>
 
 </div>
 
-<img class="wave-top" src="img/wave1-top.png">
+
+<img class="wave-top2" src="img/wave1-top.png">
 
 
 </section>
@@ -286,6 +259,8 @@
 </footer>
 
 
-</body>
-<script src="main.js"></script>
+  </body>
+  <script type="text/javascript" src="main.js">
+
+  </script>
 </html>
