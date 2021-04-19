@@ -17,10 +17,6 @@ produktBillede.forEach(image =>
 
 
 
-// Her sættes default attribute til at være "disabled"
-
-document.querySelector(".minus-but").setAttribute("disabled", "disabled");
-
 // Vi laver en variabel til det samlede antal
 var valueCount
 
@@ -35,12 +31,7 @@ document.querySelector(".plus-but").addEventListener("click", function () {
     document.getElementById("antal").value = valueCount;
 });
 
-    // Hvis værdien er over nul, så skal den fjerne classen "disabled"
-    // Det bliver nu muligt og bruge den disabled knap
-    if (valueCount > 1) {
-        document.querySelector(".minus-but").removeAttribute("disabled");
-        document.querySelector(".minus-but").classList.remove("disabled");
-    };
+
 
     document.querySelector(".minus-but").addEventListener("click", function () {
 
