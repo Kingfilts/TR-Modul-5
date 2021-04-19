@@ -26,7 +26,6 @@ const navslide = () => {
 navslide();
 
 
-function changeImage() {
 
 // Her bliver der lavet consts til vores forskellige billeder
 // En const til det aktive billede og vores liste af billeder
@@ -71,7 +70,7 @@ document.querySelector(".plus-but").addEventListener("click", function () {
 
         document.getElementById("antal").value = valueCount;
 });
-    
+
     }
 
 
@@ -175,4 +174,4 @@ function getSelectValue(obj) {
 }
 
 
-changeImage() 
+changeImage()
