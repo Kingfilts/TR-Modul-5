@@ -97,48 +97,205 @@ button:hover {
 
 
 
-/* Navigation Styling */
-
+/* Nav Bar Section */
 nav {
-    height: 100px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,.3);
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    background: var(--light);
+  display: flex;
+  flex: 2;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 12vh;
+  margin: 0;
+  z-index: 10;
+  border-bottom: 1px #1111110e solid;
+  position: fixed;
+  background: var(--light);
 }
 
-nav img {
-    height: 35px;
-    position: absolute;
-    left: 110px;
-    top: 50%;
-    transform: translateY(-50%);
+.logo {
+  display: flex;
+  width: 200px;
+  margin-left: 110px;
+  margin-right: 50px;
 }
 
-nav .navlinks {
-    position: absolute;
-    right: 110px;
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-    top: 50%;
-    transform: translateY(-50%);
+.logo img {
+  width: 200px;
 }
 
-nav .navlinks a {
-    text-align: right;
-    padding: 37px 40px;
-    color: var(--dark);
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 12.1vh;
+  position: relative;
+  margin-right: 110px;
 }
 
-nav .navlinks a:hover {
-    border-bottom: 3px solid #c3c3c3;
+.nav-links li {
+  display: block;
+  flex-grow: 1;
+  text-align: center;
+  font-weight: 500;
+  position: relative;
 }
 
-nav .navlinks a.active {
-    border-bottom: 3px solid var(--accent);
+.nav-links li a {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  overflow: hidden;
 }
+
+.nav-links li:hover {
+  border-bottom: 3px solid var(--accent);
+}
+
+.nav-links a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #000000;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Responsiv max-w 1120px */
+    @media only screen and (max-width: 1120px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .logo {
+        display: flex;
+        flex: 2;
+        width: 40%;
+        margin-left: 20px;
+        margin-right: 3%;
+    }
+
+    .logo img {
+        width: 200px; /* EVT LAV % OM TIL PX, SÅ DU UNDGÅR SIZING */
+        padding-bottom: 10px;
+        padding-top: 5px;
+        margin-left: 110px;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 87.9vh;
+        top: 8.5vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        transform: translateX(-10%); /* OVERFLOW FEJL LÅ HER */
+        transition: 0.5s ease-in;
+        font-size: 0.875rem;
+        margin-right: 0;
+    }
+
+   .nav-links li {
+        opacity: 0;
+        width: 100%;
+        transition: 0.2s;
+    }
+
+    .nav-links li:hover {
+        border-bottom: none;
+    }
+
+    .nav-links a {
+        color: black;
+        width: 80%;
+        display: none;
+        position: relative;
+        left: 50%;
+    }
+
+    .burger {
+        display: block;
+        margin-right: 5%;
+        right: 20px;
+        position: fixed;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+        background-color: #fff;
+        margin-top: 3.5vh;
+        border: 1px #1111110e solid;
+        z-index: 3;
+    }
+
+    .nav-active a {
+        display: block;
+    }
+
+    .nav-active li:hover {
+        background: #f7f7f7;
+    }
+
+    .nav-links li:hover a {
+        color: black;
+        font-weight: 700;
+    }
+
+    @keyframes navLinkFade {
+        from {
+        opacity: 0;
+        transform: translateX(50px);
+        }
+        to {
+        opacity: 1;
+        transform: translateX(0px);
+        }
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
+  /* End of Responsiv max-w 1120px */
+
+  /* Responsiv max-w 600px */
+  @media only screen and (max-width: 600px) {
+    .logo img {
+      margin-left: 50px;
+  }
+    .nav-links {
+      transform: translateX(-5%); /* OVERFLOW FEJL LÅ HER */
+      width: 50%;
+    }
+  }
+  /* End of Responsiv max-w 600px */
+
+  /* Responsiv max-w 400px */
+  @media only screen and (max-width: 400px) {
+  .logo img {
+      width: 150px;
+    }
+  }
+  /* End of Responsiv max-w 400px */
+/* End of Nav Bar Section */
 
 
 
