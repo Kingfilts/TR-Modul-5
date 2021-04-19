@@ -172,7 +172,12 @@ header a:last-of-type button {
     background: var(--dark);
 }
 
-
+header .stub {
+    opacity: .4;
+    position: absolute;
+    right: -30%;
+    width: 1000px;
+}
 
 
 
@@ -215,6 +220,10 @@ header a:last-of-type button {
 
 
 /* Featured Product Styling */
+
+#featured-products {
+    padding: 100px 0;
+}
 
 #featured-products h3 {
     text-align: center;
@@ -285,7 +294,7 @@ header a:last-of-type button {
 /* Footer styling */
 
 footer {
-    height: 500px;
+    height: 300px;
     background: var(--dark);
     color: var(--light);
     padding: 110px;
@@ -672,13 +681,6 @@ footer {
     bottom: -65px;
 }
 
-.wave-top {
-    position: relative;
-    bottom: 0;
-    margin-left: -110px;
-    margin-bottom: -10px;
-}
-
 
 
 .comingsoon{
@@ -843,4 +845,13 @@ width: 100%;
 }
 .billedeinfo {
   margin-right: 250px;
+}
+
+
+
+
+@media only screen and (max-width: 1120px) {
+  section, header {
+    margin: 0 50px;
+}
 }
