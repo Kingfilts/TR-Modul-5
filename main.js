@@ -16,8 +16,6 @@ produktBillede.forEach(image =>
     image.addEventListener("click", skiftBillede));
 
 
-// Antal
-
 
 // Her sættes default attribute til at være "disabled"
 
@@ -35,7 +33,7 @@ document.querySelector(".plus-but").addEventListener("click", function () {
     valueCount++;
 
     document.getElementById("antal").value = valueCount;
-
+});
 
     // Hvis værdien er over nul, så skal den fjerne classen "disabled"
     // Det bliver nu muligt og bruge den disabled knap
@@ -44,4 +42,11 @@ document.querySelector(".plus-but").addEventListener("click", function () {
         document.querySelector(".minus-but").classList.remove("disabled");
     };
 
+    document.querySelector(".minus-but").addEventListener("click", function () {
+
+        valueCount = document.getElementById("antal").value;
+
+        valueCount--;
+
+        document.getElementById("antal").value = valueCount;
 });
