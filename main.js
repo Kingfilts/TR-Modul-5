@@ -71,7 +71,6 @@ document.querySelector(".plus-but").addEventListener("click", function () {
         document.getElementById("antal").value = valueCount;
 });
 
-    }
 
 
 
