@@ -6,38 +6,42 @@ const produktBillede = document.querySelectorAll(".product-image-list img");
 // Herefter laves der en funktion som tager vores aktiv billede og skifter
 // ud med det billede der er blevet trykket på
 function skiftBillede(e) {
-  aktivBillede.src = e.target.src;
+    aktivBillede.src = e.target.src;
 }
 
 // Når der bliver trykket på en af billederne på listen, vil der blive
 // kaldt til en funktion der sørger for at billedet skifter
 
 produktBillede.forEach(image =>
-  image.addEventListener("click", skiftBillede));
+    image.addEventListener("click", skiftBillede));
 
 
-  // Antal
+// Antal
 
 
-  // Her sættes default attribute til at være "disabled"
+// Her sættes default attribute til at være "disabled"
 
-  document.querySelector(".minus-but").setAttribute("disabled");
+document.querySelector(".minus-but").setAttribute("disabled", "disabled");
 
 // Vi laver en variabel til det samlede antal
-  var valueCount
+var valueCount
 
-  // Increment at vores værdi når vi trykker på plus knappen. Der bliver
-  // Lyttet efter et klik som udfører følgende funktion og tilføjer 1
-  document.querySelector(".plus-but").addEventListener("click", function() {
+// Increment at vores værdi når vi trykker på plus knappen. Der bliver
+// Lyttet efter et klik som udfører følgende funktion og tilføjer 1
+document.querySelector(".plus-but").addEventListener("click", function () {
 
-      valueCount = document.getElementById("antal").value;
+    valueCount = document.getElementById("antal").value;
 
-      valueCount++;
+    valueCount++;
 
-      document.getElementById("antal").value = valueCount;
-// Hvis værdien er over nul, så skal den fjerne classen "disabled"
-// Det bliver nu muligt og bruge den disabled knap
-      if (valueCount > 1) {
-          document.querySelector(".minus-but").removeAttribute("disabled");
-          document.querySelector(".minus-but").classList.remove("disabled")
-      }
+    document.getElementById("antal").value = valueCount;
+
+
+    // Hvis værdien er over nul, så skal den fjerne classen "disabled"
+    // Det bliver nu muligt og bruge den disabled knap
+    if (valueCount > 1) {
+        document.querySelector(".minus-but").removeAttribute("disabled");
+        document.querySelector(".minus-but").classList.remove("disabled");
+    };
+
+});

@@ -711,6 +711,12 @@ footer {
   min-height: 900px;
 }
 
+.product-hero-images img.active {
+    width: 555px;
+    object-fit: cover;
+    height: 555px;
+}
+
 .product-image-list {
   display: flex;
   list-style-type: none;
