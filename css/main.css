@@ -21,7 +21,7 @@
     font-family: 'Poppins', sans-serif;;
 }
 
-html {
+html, body{
     overflow-x: hidden;
 }
 
@@ -613,14 +613,15 @@ footer {
 
 #product-overview{
   margin-top: -200px;
+  height: auto;
 }
 
 
 .webshop-container {
     width: calc(100vw - 220px);
-    height: 300px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 
@@ -631,27 +632,36 @@ footer {
     left: 50%;
     transform: translateX(-50%);
     transition: .2s ease-in-out;
-    bottom: -15px;
+    border-radius: 18px;
 }
 
 .webshop-product-container {
+    height: 100px;
+    width: 100%;
     background: var(--grey);
-    width: 130px;
-    height: 10px;
-    border-radius: 18px;
-    position: absolute;
-    padding: 75px 50px 10px;
-    cursor: pointer;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    margin-top: -20px;
 }
 
+.webshop-product-container h5{
+    padding-left: 20px;
+    padding-top: 25px;
+}
+
+.webshop-product-container p{
+    padding-left: 20px;
+    padding-top: 10px;
+}
 
 .webshop-product {
     cursor: pointer;
+    position: relative;
 }
 
 
 .webshop-product h5 {
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .featured-product p {
@@ -660,4 +670,34 @@ footer {
 
 .featured-product:hover img {
     bottom: -65px;
+}
+
+.wave-top {
+    position: relative;
+    bottom: 0;
+    margin-left: -110px;
+    margin-bottom: -10px;
+}
+
+
+
+.comingsoon{
+    height: 100%;
+    width: 100%;
+    background: rgb(152 114 89 / 50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 18px;
+
+}
+
+.comingsoon h2{
+    font-size: 20px;
+    position: absolute;
+    color: white;
+    top: 35%;
+    left: 17%;
+    z-index: 50;
 }
