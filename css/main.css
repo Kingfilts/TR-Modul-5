@@ -624,13 +624,7 @@ footer {
 
 
 /* Contact subpage (THEA) */
-/*#contact-section .center-content {
-    width: 100%;
-    margin-top: 20px;
-    height: 100vh;
-    position: absolute;
-    top: 950px;
-}*/
+
 #contact-section {
     padding: 100px 0;
 }
@@ -690,9 +684,9 @@ footer {
 
 #popup {
     display: none;
-    position: relative;
+    position: absolute;
     transform: translate(-50%, -50%);
-    top: -300px;
+    top: 50%;
     left: 50%;
     height: 300px;
     width: 500px;
@@ -751,7 +745,7 @@ footer {
     right: -110px;
     top: -100px;
     z-index: -1;
-    height: 100vh;
+    height: 100%;
 }
 
 .contact-image img {
